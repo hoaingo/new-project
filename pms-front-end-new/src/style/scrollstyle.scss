@@ -1,0 +1,39 @@
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+	::-webkit-scrollbar {
+		width:  $size;
+		height: $size;
+	}
+  
+	::-webkit-scrollbar-thumb {
+		// background: $foreground-color;
+		border-radius: 10px;
+		background-image: -webkit-gradient(linear,
+											 left bottom,
+											 left top,
+											 color-stop(0.44, rgb(217, 144, 122)),
+											 color-stop(0.72, rgb(189, 90, 73)),
+											 color-stop(0.86, rgb(204, 24, 24)));
+	}
+  
+	::-webkit-scrollbar-track {
+		// background: $background-color;
+		border-radius: 10px;
+		background: #eee;
+		box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
+	}
+  
+	// For Internet Explorer
+	body {
+	  scrollbar-face-color: $foreground-color;
+	  scrollbar-track-color: $background-color;
+	}
+  }
+  
+  @include scrollbars(.5em, slategray);
+
+.bm-overlay{
+	opacity: 0 !important;
+}
+  
+  
+  

@@ -1,0 +1,8 @@
+{
+  "title": "Chào mừng đến với Phần mềm Quản lý",
+  "description": {
+    "part1": "Đây là phần mô tả part 1",
+    "part2": "Đây là phần mô tả part 2"
+  },
+  "userMessagesUnread": "Hello {{name}} anh có {{mobile}} tin nhắn chưa đọc."
+}

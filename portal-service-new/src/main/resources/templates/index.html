@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!--<link rel="apple-touch-icon" sizes="76x76" href="~/Content/assets/img/apple-icon.png" />-->
+        <link rel="shortcut icon" th:href="@{/img/scm-logo.png}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+        <title>Study Center Management</title>
+        <!--         Canonical SEO 
+                <link rel="canonical" href="#" />-->
+        <!-- Bootstrap core CSS     -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!--<link th:href="@{/css/bootstrap.css}" rel="stylesheet" />-->
+        <!--<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />-->
+        <!--<link th:href="@{/css/bootstrap.min_1.css}" rel="stylesheet" />-->
+        <!--  Material Dashboard CSS    -->
+        <link th:href="@{/css/material-dashboard.css}" rel="stylesheet" />
+        <link th:href="@{/css/demo.css}" rel="stylesheet" />
+        <link rel="stylesheet" href="css/perfect-scrollbar.css">
+        <!--  CSS for Demo Purpose, don't include it in your project     -->
+        <!--     Fonts and icons     -->
+        <!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">-->
+        <link th:href="@{/css/fontawesome-free-5.3.1-web/css/fontawesome.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/fontawesome-free-5.3.1-web/css/all.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/fontawesome-free-5.3.1-web/css/brands.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/fontawesome-free-5.3.1-web/css/regular.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/fontawesome-free-5.3.1-web/css/solid.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/font-awesome-v4-7-0.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/font.css}" rel="stylesheet" />
+        <link th:href="@{/css/font2.css}" rel="stylesheet" />
+        <!--<script th:src="@{/js/tinymce.min.js}"></script>-->
+        <!--<script>tinymce.init({ selector: 'textarea' });</script>-->
+    </head>
+    <body>
+        <div id="root"></div>
+        <input type="text" class="form-control datepicker" value="10/10/2016" style="display: none;"/>
+
+        <!--   Core JS Files   -->
+        <!--<script th:src="@{/js/jquery-3.3.1.min.js}"></script>-->
+        <!--<script type="text/javascript"  th:src="@{/js/jquery-3.2.1.min.js}" ></script>-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+        <!--<script type="text/javascript"  th:src="@{/js/bootstrap.min.js}" ></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/javascript"  th:src="@{/js/material.min.js}" ></script>
+        <script type="text/javascript"  th:src="@{/js/perfect-scrollbar.jquery.min.js}" ></script>
+        <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+        <script type="text/javascript"  th:src="@{/js/core.js}"></script>
+        <!-- Library for adding dinamically elements -->
+        <script type="text/javascript"  th:src="@{/js/arrive.min.js}" ></script>
+        <!-- Forms Validations Plugin -->
+        <script type="text/javascript"  th:src="@{/js/jquery.validate.min.js}"></script>
+        <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+        <script type="text/javascript"  th:src="@{/js/moment.min.js}"></script>
+        <!--  Charts Plugin, full documentation here: https://gionkunz.github.io/chartist-js/ -->
+        <script type="text/javascript"  th:src="@{/js/chartist.min.js}"></script>
+        <!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+        <script type="text/javascript"  th:src="@{/js/jquery.bootstrap-wizard.js}"></script>
+        <!--  Notifications Plugin, full documentation here: http://bootstrap-notify.remabledesigns.com/    -->
+        <script type="text/javascript"  th:src="@{/js/bootstrap-notify.js}"></script>
+        <!--   Sharrre Library    -->
+        <script type="text/javascript"  th:src="@{/js/jquery.sharrre.js}"></script>
+        <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+        <script th:src="@{/js/bootstrap-datetimepicker.js}"></script>
+        <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+        <script type="text/javascript"  th:src="@{/js/jquery-jvectormap.js}"></script>
+        <!-- Sliders Plugin, full documentation here: https://refreshless.com/nouislider/ -->
+        <script type="text/javascript"  th:src="@{/js/nouislider.min.js}"></script>
+        <!--  Google Maps Plugin    -->
+        <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1_8C5Xz9RpEeJSaJ3E_DeBv8i7j_p6Aw"></script>-->
+        <!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+        <script type="text/javascript"  th:src="@{/js/jquery.select-bootstrap.js}"></script>
+        <!--  DataTables.net Plugin, full documentation here: https://datatables.net/    -->
+        <script type="text/javascript"  th:src="@{/js/jquery.datatables.js}"></script>
+        <!-- Sweet Alert 2 plugin, full documentation here: https://limonte.github.io/sweetalert2/ -->
+        <script type="text/javascript"  th:src="@{/js/sweetalert2.js}"></script>
+        <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+        <script type="text/javascript"  th:src="@{/js/jasny-bootstrap.min.js}"></script>
+        <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+        <script type="text/javascript"  th:src="@{/js/fullcalendar.min.js}"></script>
+        <!-- Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+        <script type="text/javascript"  th:src="@{/js/jquery.tagsinput.js}"></script>
+        <!-- Material Dashboard javascript methods -->
+        <script type="text/javascript"  th:src="@{/js/material-dashboard.js}"></script>
+        <!--<script th:src="@{/js/material-dashboard.js?v=1.2.1}"></script>-->
+        <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+        <script type="text/javascript"  th:src="@{/js/demo.js}"></script>
+        <!--<script type="text/javascript"  src="http://localhost:9596/3rd-library.bundle.js"></script>-->
+        <script type="text/javascript"  src="http://localhost:9596/App.bundle.js"></script>
+        <!--<script type="text/javascript"  src="http://localhost:9596/manifest.bundle.js"></script>-->
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+            // Javascript method's body can be found in assets/js/demos.js
+            demo.initDashboardPageCharts();
+
+            demo.initVectorMap();
+            demo.initFormExtendedDatetimepickers();
+            });
+        </script>
+    </body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">     
+        <meta name="context-path" th:content="@{/}"/>
+        <link rel="manifest" href="static/manifest.json">
+                <link rel="shortcut icon" href="static/favicon.ico">      
+        <link  th:href="@{/css/font-awesome.css}" rel="stylesheet">
+        <link  th:href="@{/css/pe-icon-7-stroke.css}" rel="stylesheet">
+        <link  th:href="@{/css/right-modals.css}" rel="stylesheet">
+        <link  th:href="@{/css/font.css}" rel="stylesheet">
+        <link  th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+        <link  th:href="@{/css/style.default.css}" rel="stylesheet" id="color-switcher">
+        <link  th:href="@{/css/animate.min.css}" rel="stylesheet">
+
+        <title>Study Center Management</title>
+
+
+    </head>
+    <body>
+       
+        
+            <ul>
+                    <li class="white" data-path="./css/style.blue.css">White</li>
+                    <li class="black" data-path="./css/style.default.css">Black</li>
+            </ul>
+            <div id="root">
+                    
+                
+                
+            </div>
+
+       
+        <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/Chart.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/jquery.validate.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/front.js}"></script>
+        <script type="text/javascript" th:src="@{/js/jquery.cookie.js}"></script>
+        <script type="text/javascript" th:src="@{/js/bootstrap-notify.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/sockjs.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/stomp.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/WebSocket.js}"></script>
+
+        <script type="text/javascript" th:src="@{/js/push.js}" ></script>
+        <script type="text/javascript" src="http://localhost:9595/App.bundle.js"></script>
+         <script>
+            $('#root span').on('click', function(){
+                var path = $(this).data('path');
+                $('#color-switcher').attr('href', path);
+              
+                $("#style-switch").css("display", "none");
+            });
+        </script>
+        
+        <script type="text/javascript" src="resources/js/App.bundle.js" ></script>
+
+
+
+    <script src="js/charts-custom.js"></script>
+    <script type="text/javascript" src="resources/js/3rd-library.bundle.js"></script>
+    <script type="text/javascript" src="resources/js/App.bundle.js"></script>
+    <script type="text/javascript" src="resources/js/manifest.bundle.js"></script>
+    
+  </body>
+</html>-->

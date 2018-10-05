@@ -1,0 +1,38 @@
+$h1-color: red;
+// h1{
+//     text-align: center;
+// }
+
+// h2{
+//     color: blue;
+//     text-align: center;
+// }
+a{
+    color: black;
+}
+
+.left-menu{
+    width: 14%;
+    float: left;
+    margin-left: 15px;
+    
+    // border: 1px red solid;
+}
+
+.menuLeft{
+    margin-left: 15px;
+    margin-top: 15px;   
+}
+
+.right-items{
+    width: 85%;
+    float: right;
+    border: 1px red solid;
+}
+
+
+.Select-menu-outer{
+    overflow: hidden;
+    height: 120px;
+    
+}

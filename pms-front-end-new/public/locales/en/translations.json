@@ -1,0 +1,8 @@
+{
+  "title": "Welcome to the Procurement Management System!!",
+  "description": {
+    "part1": "This is the description of part 1",
+    "part2": "This is the description of part 2 with parameter <1><0>{{name}}</0></1>"
+  },
+  "userMessagesUnread": "Hello {{name}} you have {{mobile}} unread message."
+}

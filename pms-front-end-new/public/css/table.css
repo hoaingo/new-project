@@ -1,0 +1,43 @@
+.text-align {
+    text-align: center;
+}
+
+.modal-header {
+    background: #337ab7;
+    color: white
+}
+
+.btn.btn-warning.btn-simple, .navbar .navbar-nav>li>a.btn.btn-warning.btn-simple {
+    background-color: transparent;
+    color: #ff9800;
+    box-shadow: none;
+}
+
+.btn.btn-info.btn-simple, .navbar .navbar-nav>li>a.btn.btn-info.btn-simple {
+    background-color: transparent;
+    color: #00bcd4;
+    box-shadow: none;
+}
+
+.btn.btn-danger.btn-simple, .navbar .navbar-nav>li>a.btn.btn-danger.btn-simple {
+    background-color: transparent;
+    color: #f44336;
+    box-shadow: none;
+}
+
+.btn-simple.btn-icon {
+    padding: 3px 10px;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.page-item>.page-link{
+    cursor: pointer;
+}
+.page-item .active>.page-link{
+    cursor: default;
+}

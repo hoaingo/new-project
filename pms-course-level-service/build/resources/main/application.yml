@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: course-level-service
+
+server:
+  port: 7903
+  
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  

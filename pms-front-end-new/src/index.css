@@ -1,0 +1,46 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+} */
+
+.sidebar[data-active-color="rose"] li>a.active {
+  background-color: #e91e63;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
+}
+
+.card-calendar .fc-toolbar {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fc-day-grid-event .fc-time {
+  float: left;
+}
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+  color: #99999C;
+}
+
+.fc-ltr:hover .fc-basic-view:hover .fc-day-top:hover .fc-day-number:hover {
+  text-decoration: none;
+  color: #9C27B0;
+}
+
+a[data-goto] {
+  color: #99999C;
+}
+
+a[data-goto]:hover {
+  text-decoration: none;
+  color: #9C27B0;
+}
+
+.fc-event:hover {
+  cursor: pointer
+}
+
+.picker_container {
+  margin: 0 auto !important;
+}

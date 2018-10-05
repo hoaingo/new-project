@@ -1,0 +1,12 @@
+
+
+dependencies {
+    compile files('src/main/resources/pms-jdbc-1.0.0.jar')
+    compile project(':pms-sp-configuration')
+//    compile(project (':pms-sp-configuration')) {
+//        exclude group: 'javax.servlet'
+//    }
+//    compile ('com.fasterxml.jackson.core:jackson-annotations:2.8.1')
+
+}
+

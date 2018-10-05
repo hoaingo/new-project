@@ -1,0 +1,18 @@
+
+
+dependencies {
+    compile(project (':pms-sp-configuration')) {
+        exclude group: 'javax.servlet'
+    }
+        compile('org.springframework.boot:spring-boot-starter-web') 
+
+    compile ('com.fasterxml.jackson.core:jackson-annotations:2.8.1')
+    compile('org.aspectj:aspectjtools:1.9.0')
+    compile('org.springframework:spring-aop:5.0.0.RELEASE')
+    compile('org.springframework:spring-aspects:3.2.0.RELEASE')
+    compile('org.apache.commons:commons-lang3:3.0')
+    compile('org.springframework.boot:spring-boot-starter-jdbc:2.0.0.RELEASE')
+    compile('com.fasterxml.jackson.core:jackson-databind:2.9.0')
+    compile project(':pms-model')
+}
+

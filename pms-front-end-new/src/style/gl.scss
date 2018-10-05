@@ -1,0 +1,58 @@
+.ReactTable {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 1600px;
+    background-color: ivory;
+    border: 20px black;
+    //align-self: center
+}
+.ReactTable .rt-tr:hover .rt-td {
+    background: burlywood;
+    border: 5px
+}
+
+.ReactTable .rt-td {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
+    border: 10px black
+}
+
+.page-header {
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: center
+}
+
+.header {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: lightgrey
+}
+
+.modal-header {
+    background-color: darkgoldenrod;
+}
+
+.modal-body {
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: italic;
+    color: black
+}
+
+.label {
+    font-weight: 600;
+}
+
+.button{
+    font-weight: 500;
+    font-size: black;
+    margin-bottom: 5px;
+    margin-right: 4px;
+    margin-left: 20px
+}
+
+.modal-footer {
+    background-color: lightgrey
+}

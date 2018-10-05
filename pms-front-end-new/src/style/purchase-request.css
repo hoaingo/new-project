@@ -1,0 +1,40 @@
+.box-shadow {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.box-boder1 {
+    border: 2px solid #eceeef;
+    /* height: 620px; */
+    
+}
+.box-boder2 {
+    border: 2px solid #eceeef;
+    /* height: 490px; */
+    
+}
+.box-boder3 {
+    border: 2px solid #eceeef;
+    /* height: 120px; */
+    margin-top: 10px;
+    
+}
+.box-boder1 .breadcrumb{
+    padding-left: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+
+}
+.box-boder2 .breadcrumb{
+    padding-left: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+
+}
+.box-margin{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.box-top{
+    margin-top: 10px;
+}

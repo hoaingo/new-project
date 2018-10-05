@@ -1,0 +1,19 @@
+-- 
+-- CREATE DEFINER=`intern`@`%` PROCEDURE `up_pms_insert_item_detail_of_purchase_request`(pPr_Id INT(11),pItem_id int(11), pGl_Id int(11), pCurrency_code char(3), pVendorId int(11),pUnit_price FLOAT, pQuantity int(11),pShipping_id int(11),pCreated_date date, pCreated_by varchar(50),pUpdated_date date, pUpdated_by varchar(50))
+-- BEGIN
+-- 
+-- 	INSERT INTO `pms_purchase_request_detail`(	pr_id, item_id, 
+-- 												gl_id, currency_code, vendor_id,  unit_price, quantity,shipping_id, 
+-- 												
+--                                                 created_date, created_by, updated_date, updated_by)
+--                                                 
+-- 									VALUES(		pPr_Id,  pItem_id, 
+-- 												pGl_Id, pCurrency_code, pVendorId, pUnit_price, pQuantity,pShipping_id,
+--                                                 
+--                                                 now(), pCreated_by, now(), pUpdated_by
+--                                     );
+-- 	
+-- 	
+--     SELECT * FROM pms_purchase_request_detail ORDER BY prd_id DESC LIMIT 1;
+-- 
+-- END
