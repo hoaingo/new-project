@@ -1,4 +1,0 @@
--- CREATE DEFINER=`intern`@`%` PROCEDURE `up_pms_get_list_purchase_request`()
--- BEGIN 
--- 	select pr_id,pr_description,total_price, created_date, created_by, updated_date, updated_by,remarks, status, gl_id, petty_id from pms_purchase_request;
--- END
